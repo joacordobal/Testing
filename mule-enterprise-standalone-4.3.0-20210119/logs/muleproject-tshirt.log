@@ -1,0 +1,142 @@
+WARN  2021-07-15 08:24:23,524 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.extension.internal.loader.enricher.ConfigRefDeclarationEnricher: Component 'console' in extension 'APIKit' already has a 'config-ref' parameter defined. Skipping ConfigRefDeclarationEnricher for it.
+WARN  2021-07-15 08:24:23,525 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.extension.internal.loader.enricher.ConfigRefDeclarationEnricher: Component 'router' in extension 'APIKit' already has a 'config-ref' parameter defined. Skipping ConfigRefDeclarationEnricher for it.
+INFO  2021-07-15 08:24:27,773 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.api.el.AbstractBindingContextBuilderFactory: Loaded BindingContextBuilderFactory implementation 'org.mule.runtime.core.api.el.DefaultBindingContextBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@2eb4480a'
+INFO  2021-07-15 08:24:27,985 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.api.message.AbstractMuleMessageBuilderFactory: Loaded MuleMessageBuilderFactory implementation 'org.mule.runtime.core.internal.message.DefaultMessageBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@2eb4480a'
+INFO  2021-07-15 08:24:28,733 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.journal.TransactionJournal: Using files for tx logs C:\Users\joakp\Desktop\Mulesoft\mule-enterprise-standalone-4.3.0-20210119\.\.mule\muleproject-tshirt\queue-tx-log\tx1.log and C:\Users\joakp\Desktop\Mulesoft\mule-enterprise-standalone-4.3.0-20210119\.\.mule\muleproject-tshirt\queue-tx-log\tx2.log
+INFO  2021-07-15 08:24:28,739 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.journal.TransactionJournal: Using files for tx logs C:\Users\joakp\Desktop\Mulesoft\mule-enterprise-standalone-4.3.0-20210119\.\.mule\muleproject-tshirt\queue-xa-tx-log\tx1.log and C:\Users\joakp\Desktop\Mulesoft\mule-enterprise-standalone-4.3.0-20210119\.\.mule\muleproject-tshirt\queue-xa-tx-log\tx2.log
+INFO  2021-07-15 08:24:28,770 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2021-07-15 08:24:28,956 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-Database_Config
+INFO  2021-07-15 08:24:28,966 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-Web_Service_Consumer_Config
+INFO  2021-07-15 08:24:28,987 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.security.tls.TlsProperties: Loading configuration file: tls-default.conf
+INFO  2021-07-15 08:24:28,988 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.api.tls.AbstractTlsContextFactoryBuilderFactory: Loaded TlsContextFactoryBuilderFactory implementation 'org.mule.runtime.module.tls.api.DefaultTlsContextFactoryBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@2eb4480a'
+INFO  2021-07-15 08:24:30,333 [WrapperListener_start_runner] [processor: ; event: ] org.mule.module.apikit.Configuration: Building resource URI cache...
+INFO  2021-07-15 08:24:30,355 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: t-shirt-main
+INFO  2021-07-15 08:24:30,387 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: listener
+INFO  2021-07-15 08:24:30,414 [WrapperListener_start_runner] [processor: ; event: ] org.mule.module.apikit.Router: 
+********************************************************************************
+* APIKit Router 't-shirt-config' started using Parser: AMF                     *
+********************************************************************************
+INFO  2021-07-15 08:24:30,417 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: t-shirt-console
+INFO  2021-07-15 08:24:30,417 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: listener
+INFO  2021-07-15 08:24:30,419 [WrapperListener_start_runner] [processor: ; event: ] org.mule.module.apikit.Console: 
+********************************************************************************
+* APIKit Console URL: http://localhost:8081/console/                           *
+********************************************************************************
+INFO  2021-07-15 08:24:30,420 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: Copy_of_updateinventory
+INFO  2021-07-15 08:24:30,738 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: put:\apiportal\updateinventory:application\json:t-shirt-config
+INFO  2021-07-15 08:24:30,742 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: Copy_of_Copy_of_Get-InventoryDB
+INFO  2021-07-15 08:24:30,752 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: get:\apiportal\getinventory:t-shirt-config
+INFO  2021-07-15 08:24:30,753 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: Copy_of_Copy_of_Get-InventoryDB-size
+INFO  2021-07-15 08:24:30,759 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: get:\apiportal\sizes:t-shirt-config
+INFO  2021-07-15 08:24:30,760 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: Copy_of_Copy_of_Get-InventoryDB-sku
+INFO  2021-07-15 08:24:30,766 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: get:\apiportal\sku:t-shirt-config
+INFO  2021-07-15 08:24:30,766 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: Copy_of_Copy_of_Get-Stock
+INFO  2021-07-15 08:24:30,784 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: get:\apiportal\stock:t-shirt-config
+INFO  2021-07-15 08:24:30,785 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: Copy_of_postinventory
+INFO  2021-07-15 08:24:30,796 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: post:\apiportal\postinventory:application\json:t-shirt-config
+INFO  2021-07-15 08:24:30,797 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: Copy_of_Copy_of_GetInventory-Soap
+INFO  2021-07-15 08:24:30,797 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: listener
+INFO  2021-07-15 08:24:30,808 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: Copy_of_Copy_of_Bulkinventory
+INFO  2021-07-15 08:24:30,809 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: listener
+INFO  2021-07-15 08:24:30,910 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2021-07-15 08:24:30,910 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2021-07-15 08:24:30,914 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2021-07-15 08:24:30,930 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-Database_Config
+WARN  2021-07-15 08:24:31,373 [[MuleRuntime].uber.17: [muleproject-tshirt].uber@org.mule.runtime.module.extension.internal.runtime.config.LifecycleAwareConfigurationInstance.testConnectivity:179 @4b5ee898] [processor: ; event: ] org.mule.extension.db.api.logger.MuleMySqlLogger: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+INFO  2021-07-15 08:24:33,023 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-Web_Service_Consumer_Config
+INFO  2021-07-15 08:24:33,075 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: t-shirt-main
+INFO  2021-07-15 08:24:33,406 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: t-shirt-console
+INFO  2021-07-15 08:24:33,423 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: put:\apiportal\updateinventory:application\json:t-shirt-config
+INFO  2021-07-15 08:24:33,438 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: get:\apiportal\getinventory:t-shirt-config
+INFO  2021-07-15 08:24:33,444 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: get:\apiportal\sizes:t-shirt-config
+INFO  2021-07-15 08:24:33,448 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: get:\apiportal\sku:t-shirt-config
+INFO  2021-07-15 08:24:33,452 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: get:\apiportal\stock:t-shirt-config
+INFO  2021-07-15 08:24:33,456 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: post:\apiportal\postinventory:application\json:t-shirt-config
+INFO  2021-07-15 08:24:33,459 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: Copy_of_Copy_of_GetInventory-Soap
+INFO  2021-07-15 08:24:33,482 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: Copy_of_Copy_of_Bulkinventory
+INFO  2021-07-15 08:24:33,497 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: Copy_of_Copy_of_Get-Stock
+INFO  2021-07-15 08:24:33,511 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: Copy_of_postinventory
+INFO  2021-07-15 08:24:33,517 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: Copy_of_updateinventory
+INFO  2021-07-15 08:24:33,523 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: Copy_of_Copy_of_Get-InventoryDB-sku
+INFO  2021-07-15 08:24:33,527 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: Copy_of_Copy_of_Get-InventoryDB-size
+INFO  2021-07-15 08:24:33,531 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: Copy_of_Copy_of_Get-InventoryDB
+INFO  2021-07-15 08:24:33,547 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: listener
+INFO  2021-07-15 08:24:33,548 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: listener
+INFO  2021-07-15 08:24:33,548 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: listener
+INFO  2021-07-15 08:24:33,549 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: listener
+INFO  2021-07-15 08:24:33,550 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.logging.LogUtil: 
+**********************************************************************
+* Application: muleproject-tshirt                                    *
+* OS encoding: windows-1252, Mule encoding: UTF-8                    *
+*                                                                    *
+**********************************************************************
+ERROR 2021-07-15 08:25:20,139 [[MuleRuntime].uber.17: [muleproject-tshirt].t-shirt-main.CPU_LITE @67e42c4f] [processor: t-shirt-main/processors/0; event: 567fc500-e55f-11eb-9740-ac675df5c018] org.mule.runtime.core.internal.exception.OnErrorPropagateHandler: 
+********************************************************************************
+Message               : HTTP Method post not allowed for : /apiportal/getinventory
+Element               : t-shirt-main/processors/0 @ muleproject-tshirt:t-shirt.xml:14
+Element DSL           : <apikit:router config-ref="t-shirt-config"></apikit:router>
+Error type            : APIKIT:METHOD_NOT_ALLOWED
+FlowStack             : at t-shirt-main(t-shirt-main/processors/0 @ muleproject-tshirt:t-shirt.xml:14)
+
+  (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************
+
+WARN  2021-07-15 08:25:41,954 [[MuleRuntime].uber.17: [muleproject-tshirt].Copy_of_Copy_of_Get-InventoryDB.BLOCKING @57ce04de] [processor: ; event: 634915c0-e55f-11eb-9740-ac675df5c018] org.mule.extension.db.api.logger.MuleMySqlLogger: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+INFO  2021-07-15 08:26:25,195 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: t-shirt-main
+INFO  2021-07-15 08:26:25,196 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Stopping Bean: listener
+INFO  2021-07-15 08:26:25,204 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: t-shirt-console
+INFO  2021-07-15 08:26:25,205 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Stopping Bean: listener
+INFO  2021-07-15 08:26:25,206 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: put:\apiportal\updateinventory:application\json:t-shirt-config
+INFO  2021-07-15 08:26:25,207 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: get:\apiportal\getinventory:t-shirt-config
+INFO  2021-07-15 08:26:25,208 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: get:\apiportal\sizes:t-shirt-config
+INFO  2021-07-15 08:26:25,208 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: get:\apiportal\sku:t-shirt-config
+INFO  2021-07-15 08:26:25,209 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: get:\apiportal\stock:t-shirt-config
+INFO  2021-07-15 08:26:25,209 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: post:\apiportal\postinventory:application\json:t-shirt-config
+INFO  2021-07-15 08:26:25,210 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: Copy_of_Copy_of_GetInventory-Soap
+INFO  2021-07-15 08:26:25,210 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Stopping Bean: listener
+INFO  2021-07-15 08:26:25,211 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: Copy_of_Copy_of_Bulkinventory
+INFO  2021-07-15 08:26:25,211 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Stopping Bean: listener
+INFO  2021-07-15 08:26:25,212 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: Copy_of_Copy_of_Get-Stock
+INFO  2021-07-15 08:26:25,215 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: Copy_of_postinventory
+INFO  2021-07-15 08:26:25,216 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: Copy_of_updateinventory
+INFO  2021-07-15 08:26:25,217 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: Copy_of_Copy_of_Get-InventoryDB-sku
+INFO  2021-07-15 08:26:25,217 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: Copy_of_Copy_of_Get-InventoryDB-size
+INFO  2021-07-15 08:26:25,218 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: Copy_of_Copy_of_Get-InventoryDB
+INFO  2021-07-15 08:26:25,219 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Stopping Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2021-07-15 08:26:25,220 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Stopping Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-Database_Config
+INFO  2021-07-15 08:26:25,220 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Stopping Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-Web_Service_Consumer_Config
+INFO  2021-07-15 08:26:25,284 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2021-07-15 08:26:25,284 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2021-07-15 08:26:25,288 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.lifecycle.RegistryLifecycleCallback: Failure executing phase stop over object DefaultBatchEngine, error message is: Failed to invoke lifecycle phase "stop" on object: com.mulesoft.mule.runtime.module.batch.internal.engine.DefaultBatchEngine@2b36b6b
+INFO  2021-07-15 08:26:25,289 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.module.deployment.impl.internal.artifact.AbstractDeployableArtifact: Stopping app 'muleproject-tshirt' with no mule context
+INFO  2021-07-15 08:26:25,408 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Disposing Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2021-07-15 08:26:25,409 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: t-shirt-main
+INFO  2021-07-15 08:26:25,410 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Disposing Bean: listener
+INFO  2021-07-15 08:26:25,410 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: t-shirt-console
+INFO  2021-07-15 08:26:25,410 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Disposing Bean: listener
+INFO  2021-07-15 08:26:25,410 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Disposing Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-Database_Config
+INFO  2021-07-15 08:26:25,410 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: Copy_of_updateinventory
+INFO  2021-07-15 08:26:25,411 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: put:\apiportal\updateinventory:application\json:t-shirt-config
+INFO  2021-07-15 08:26:25,411 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: Copy_of_Copy_of_Get-InventoryDB
+INFO  2021-07-15 08:26:25,411 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: get:\apiportal\getinventory:t-shirt-config
+INFO  2021-07-15 08:26:25,411 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: Copy_of_Copy_of_Get-InventoryDB-size
+INFO  2021-07-15 08:26:25,411 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: get:\apiportal\sizes:t-shirt-config
+INFO  2021-07-15 08:26:25,412 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: Copy_of_Copy_of_Get-InventoryDB-sku
+INFO  2021-07-15 08:26:25,412 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: get:\apiportal\sku:t-shirt-config
+INFO  2021-07-15 08:26:25,412 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: Copy_of_Copy_of_Get-Stock
+INFO  2021-07-15 08:26:25,412 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: get:\apiportal\stock:t-shirt-config
+INFO  2021-07-15 08:26:25,412 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: Copy_of_postinventory
+INFO  2021-07-15 08:26:25,412 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: post:\apiportal\postinventory:application\json:t-shirt-config
+INFO  2021-07-15 08:26:25,413 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Disposing Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-Web_Service_Consumer_Config
+INFO  2021-07-15 08:26:25,413 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: Copy_of_Copy_of_GetInventory-Soap
+INFO  2021-07-15 08:26:25,413 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Disposing Bean: listener
+INFO  2021-07-15 08:26:25,413 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: Copy_of_Copy_of_Bulkinventory
+INFO  2021-07-15 08:26:25,413 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Disposing Bean: listener
+INFO  2021-07-15 08:26:25,435 [WrapperListener_stop_runner] [processor: ; event: ] org.mule.runtime.core.internal.logging.LogUtil: 
+**********************************************************************
+* Application "muleproject-tshirt" shut down normally on: 7/15/21    *
+* 8:26 AM                                                            *
+* Up for: 0 days, 0 hours, 1 mins, 54.526 sec                        *
+**********************************************************************
+INFO  2021-07-15 08:26:30,233 [[MuleRuntime].uber.05: [muleproject-tshirt].t-shirt-main.CPU_LITE @67e42c4f] [processor: ; event: ] org.mule.service.scheduler.internal.DefaultScheduler: 0 jobs were cancelled for this Scheduler.
+INFO  2021-07-15 08:26:30,233 [[MuleRuntime].uber.22: [muleproject-tshirt].t-shirt-console.CPU_LITE @706abed5] [processor: ; event: ] org.mule.service.scheduler.internal.DefaultScheduler: 0 jobs were cancelled for this Scheduler.

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>498dd6ba-5844-49b5-be8f-1d3794d99b2d</groupId>
+  <artifactId>t-shirt</artifactId>
+  <version>1.0.3</version>
+  <name>t-shirt</name>
+  <properties>
+    <classifier>raml</classifier>
+    <main>t-shirt.raml</main>
+    <originalFormatVersion>1.0</originalFormatVersion>
+    <apiVersion>V1</apiVersion>
+    <projectId>9544dc1b-d86c-460f-84fa-c8b8a852b9e2</projectId>
+    <branchId>master</branchId>
+    <commitId>6b0e819e2d54b4430bacc01581d4c7196137495a</commitId>
+    <type>rest-api</type>
+    <mainFile>t-shirt.raml</mainFile>
+  </properties>
+  <repositories>
+    <repository>
+      <id>anypoint-exchange</id>
+      <url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+    </repository>
+  </repositories>
+</project>
